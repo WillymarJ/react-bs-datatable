@@ -1,6 +1,6 @@
 {
   "name": "react-datatable-nkg",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "React Bootstrap Datatable (without jQuery) with sorting, filter, and pagination",
   "main": "dist/react-datatable-nkg.min.js",
   "scripts": {
