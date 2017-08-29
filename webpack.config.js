@@ -5,7 +5,7 @@ const path = require('path');
 const resourcePath = path.join(__dirname, './src');
 const buildPath = path.join(__dirname, './dist');
 
-const libraryName = 'react-bs-datatable';
+const libraryName = 'react-datatable-nkg';
 
 const plugins = [];
 const loaders = [
@@ -16,7 +16,7 @@ const loaders = [
     options: {
       babelrc: false,
       presets: [
-        [ 'es2015', { modules: false } ],
+        ['es2015', { modules: false }],
         "react",
         "stage-2"
       ]

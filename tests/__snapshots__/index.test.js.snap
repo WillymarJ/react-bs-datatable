@@ -7,20 +7,10 @@ exports[`Datatable component (js/component/Datatable) should match normal snapsh
 >
   <Col
     bsClass="col"
+    className="dataTables_length"
     componentClass="div"
     md={4}
-    xs={12}
-  >
-    <SelectFilter
-      filterText=""
-      keyName="test-table"
-      onChangeFilter={[Function]}
-    />
-  </Col>
-  <Col
-    bsClass="col"
-    componentClass="div"
-    md={4}
+    sm={6}
     xs={12}
   >
     <Form
@@ -63,95 +53,24 @@ exports[`Datatable component (js/component/Datatable) should match normal snapsh
             20
           </option>
         </FormControl>
-         options per page
+         entries
       </FormGroup>
     </Form>
   </Col>
   <Col
     bsClass="col"
-    className="text-right"
+    className="dataTables_filter"
     componentClass="div"
     md={4}
+    sm={6}
     xs={12}
   >
-    <ButtonGroup
-      block={false}
-      bsClass="btn-group"
-      className="btn-group-page-nav"
-      justified={false}
-      vertical={false}
-    >
-      <Button
-        active={false}
-        block={false}
-        bsClass="btn"
-        bsStyle="default"
-        disabled={true}
-        onClick={[Function]}
-      >
-        First
-      </Button>
-      <Button
-        active={false}
-        block={false}
-        bsClass="btn"
-        bsStyle="default"
-        disabled={true}
-        onClick={[Function]}
-      >
-        Prev
-      </Button>
-      <Button
-        active={true}
-        block={false}
-        bsClass="btn"
-        bsStyle="default"
-        disabled={false}
-        onClick={[Function]}
-      >
-        1
-      </Button>
-      <Button
-        active={false}
-        block={false}
-        bsClass="btn"
-        bsStyle="default"
-        disabled={false}
-        onClick={[Function]}
-      >
-        2
-      </Button>
-      <Button
-        active={false}
-        block={false}
-        bsClass="btn"
-        bsStyle="default"
-        disabled={false}
-        onClick={[Function]}
-      >
-        3
-      </Button>
-      <Button
-        active={false}
-        block={false}
-        bsClass="btn"
-        bsStyle="default"
-        disabled={false}
-        onClick={[Function]}
-      >
-        Next
-      </Button>
-      <Button
-        active={false}
-        block={false}
-        bsClass="btn"
-        bsStyle="default"
-        disabled={false}
-        onClick={[Function]}
-      >
-        Last
-      </Button>
-    </ButtonGroup>
+    Search: 
+    <SelectFilter
+      filterText=""
+      keyName="test-table"
+      onChangeFilter={[Function]}
+    />
   </Col>
   <Col
     bsClass="col"
@@ -278,6 +197,93 @@ exports[`Datatable component (js/component/Datatable) should match normal snapsh
         </tr>
       </tbody>
     </Table>
+  </Col>
+  <Col
+    bsClass="col"
+    className="text-right"
+    componentClass="div"
+    md={4}
+    sm={6}
+    xs={12}
+  >
+    <ButtonGroup
+      block={false}
+      bsClass="btn-group"
+      className="btn-group-page-nav"
+      justified={false}
+      vertical={false}
+    >
+      <Button
+        active={false}
+        block={false}
+        bsClass="btn"
+        bsStyle="default"
+        disabled={true}
+        onClick={[Function]}
+      >
+        First
+      </Button>
+      <Button
+        active={false}
+        block={false}
+        bsClass="btn"
+        bsStyle="default"
+        disabled={true}
+        onClick={[Function]}
+      >
+        Prev
+      </Button>
+      <Button
+        active={true}
+        block={false}
+        bsClass="btn"
+        bsStyle="default"
+        disabled={false}
+        onClick={[Function]}
+      >
+        1
+      </Button>
+      <Button
+        active={false}
+        block={false}
+        bsClass="btn"
+        bsStyle="default"
+        disabled={false}
+        onClick={[Function]}
+      >
+        2
+      </Button>
+      <Button
+        active={false}
+        block={false}
+        bsClass="btn"
+        bsStyle="default"
+        disabled={false}
+        onClick={[Function]}
+      >
+        3
+      </Button>
+      <Button
+        active={false}
+        block={false}
+        bsClass="btn"
+        bsStyle="default"
+        disabled={false}
+        onClick={[Function]}
+      >
+        Next
+      </Button>
+      <Button
+        active={false}
+        block={false}
+        bsClass="btn"
+        bsStyle="default"
+        disabled={false}
+        onClick={[Function]}
+      >
+        Last
+      </Button>
+    </ButtonGroup>
   </Col>
 </Row>
 `;

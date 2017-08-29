@@ -189,7 +189,7 @@ class Datatable extends React.Component {
 
           // If filterable and columnValue contains filterText
           if (this.isPropFilterable(elementProps[i]) &&
-              _includes(columnValue, this.state.filterText.toLowerCase())) {
+            _includes(columnValue, this.state.filterText.toLowerCase())) {
             isElementIncluded = true;
           }
 
@@ -358,7 +358,7 @@ class Datatable extends React.Component {
 
       // Make sure there are no duplicates being pushed
       _forEach(this.props.rowsPerPageOption, (opt) => {
-        if (!_includes(arrayOfOptions, opt) && typeof(opt) === 'number') {
+        if (!_includes(arrayOfOptions, opt) && typeof (opt) === 'number') {
           arrayOfOptions.push(opt);
         }
       });
@@ -389,7 +389,7 @@ class Datatable extends React.Component {
             >
               {selectOption}
             </FormControl>
-            {' options per page'}
+            {' entries'}
           </FormGroup>
         </Form>
       );
@@ -409,7 +409,7 @@ class Datatable extends React.Component {
       const thProps = {
         key: `${this.props.keyName}-th-${i}`,
         onClick: this.props.tableHeader[i].sortable === true ?
-                 this.onSortChange(this.props.tableHeader[i].prop) : undefined,
+          this.onSortChange(this.props.tableHeader[i].prop) : undefined,
         className: thClass,
       };
       let sortIcon = 'sort';
@@ -417,7 +417,7 @@ class Datatable extends React.Component {
 
       if (this.props.tableHeader[i].sortable === true) {
         if (this.state.sortedProp !== {} &&
-            this.state.sortedProp.prop === this.props.tableHeader[i].prop) {
+          this.state.sortedProp.prop === this.props.tableHeader[i].prop) {
           if (this.state.sortedProp.isAscending) {
             sortIcon = 'sort-asc';
           } else {
@@ -494,14 +494,11 @@ class Datatable extends React.Component {
 
     return (
       <Row>
-        <Col xs={12} md={4}>
-          {this.renderFilterOption()}
-        </Col>
-        <Col xs={12} md={4}>
+        <Col xs={12} sm={6} md={4} className="dataTables_length">
           {this.renderPaginationOption()}
         </Col>
-        <Col xs={12} md={4} className="text-right">
-          {pagination}
+        <Col xs={12} sm={6} md={4} className="dataTables_filter">
+          Search: {this.renderFilterOption()}
         </Col>
         <Col xs={12}>
           <Table className={tableClass}>
@@ -514,6 +511,9 @@ class Datatable extends React.Component {
               {this.renderTableBody(paginatedData)}
             </tbody>
           </Table>
+        </Col>
+        <Col xs={12} sm={6} md={4} className="text-right">
+          {pagination}
         </Col>
       </Row>
     );
